@@ -4,6 +4,7 @@ pipeline {
             image 'maven:3.8.7-openjdk-11' // Maven with OpenJDK 11, adjust as necessary
             args '-v /root/.m2:/root/.m2'  // Optional: Share Maven local repository to cache dependencies
         }
+    }
     stages {
         stage('Build') {
             steps {
